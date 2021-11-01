@@ -8,13 +8,13 @@ while True:
            "Type the number here >")          
     option = input(message)
     if option == "1":
-        print("Apache Hadoop master at http://127.0.0.1:")
+        print("Apache Hadoop master at http://127.0.0.1:9870")
     elif option == "2":
         print("Apache Spark master at http://127.0.0.1:8080")
     elif option == "3":
         print("Jupyter Notebook at http://127.0.0.1:8888")
     elif option == "4":
-        print("SonarQube and SonarScanner at http://127.0.0.1:9000")
+        print("SonarQube and SonarScanner at http://127.0.0.1:8000")
     else:
         print("need to be a number among options")
     new_round = input("any key to start new selection")
