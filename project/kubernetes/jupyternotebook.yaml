@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jupyternotebook
+  labels:
+    app: app-jupyternotebook
+spec:
+  selector:
+    matchLabels:
+      app: app-jupyternotebook
+  replicas: 1
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: app-jupyternotebook
+    spec:
+      containers:
+        - image: chenghuajie/jupyternotebook
+          imagePullPolicy: Always
+          name: jupyternotebook
+          ports:
+            - containerPort: 8888
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jupyternotebook-lb
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 127.0.0.1
+  ports:
+    - port:  8888
+      protocol: TCP
+      targetPort: 8888
+  selector:
+    app: app-jupyternotebook
