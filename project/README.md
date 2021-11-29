@@ -64,4 +64,4 @@ Now the application is ready to use and we can check the pods. Then we can acces
 ![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/service.JPG?raw=true)
 
 9.
-demo
+demo video: https://drive.google.com/file/d/1KZJ8kd2NiBqCP-0h72KXTovpngKoHznK/view?usp=sharing
