@@ -10,7 +10,8 @@ hadoop
 https://hub.docker.com/r/bde2020/hadoop-datanode  
 https://hub.docker.com/r/bde2020/hadoop-namenode
 
-sonar  
+SonarQube and SonarScanner  
+SonarScanner is installed with SonarQube  
 https://hub.docker.com/r/chenghuajie/sonar (source code under sonar)
 
 GUI  
@@ -33,7 +34,7 @@ Change the loadBalancerIP in yaml files under kubernetes folder with the obtaine
 Files to change are gui.yaml, jupyternotebook.yaml, sonar.yaml, spark.yaml, hadoop/namenode-service.yaml
 
 4.
-Upload all the kubernetes folder to cloud storage with a bucket named 14848-project
+Upload all the files in the kubernetes folder to cloud storage with a bucket named 14848-project
 ![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/bucket.JPG?raw=true)
 
 5.
@@ -64,4 +65,17 @@ Now the application is ready to use and we can check the pods. Then we can acces
 ![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/service.JPG?raw=true)
 
 9.
-demo video: https://drive.google.com/file/d/1KZJ8kd2NiBqCP-0h72KXTovpngKoHznK/view?usp=sharing
+demo video(also in screenshots folder): https://drive.google.com/file/d/1KZJ8kd2NiBqCP-0h72KXTovpngKoHznK/view?usp=sharing
+gui  
+![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/gui.JPG?raw=true)
+hadoop-namenode  
+![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/namenode.JPG?raw=true)
+hadoop-datanode  
+![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/datanode.JPG?raw=true)
+spark  
+![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/spark.JPG?raw=true)
+jupyternotebook
+![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/jupyter.JPG?raw=true)
+SonarQube and SonarScanner  
+The default username and password are admin for sonarqube
+![alt text](https://github.com/Huajiecheng/14848_hw/blob/main/project/screenshots/sonar.JPG?raw=true)
