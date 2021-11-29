@@ -1,0 +1,7 @@
+{
+    "ip": "34.133.18.222",
+    "hadoop_port": "9870",
+    "sonar_port": "8000",
+    "jupyter_port": "8888",
+    "spark_port": "8080"
+}

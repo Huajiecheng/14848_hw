@@ -234,12 +234,5 @@ spec:
             - containerPort: 9870
             - containerPort: 9000
           resources: {}
-          volumeMounts:
-            - mountPath: /hadoop/dfs/name
-              name: hadoop-namenode
       restartPolicy: Always
-      volumes:
-        - name: hadoop-namenode
-          persistentVolumeClaim:
-            claimName: hadoop-namenode
 status: {}

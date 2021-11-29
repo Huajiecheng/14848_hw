@@ -33,7 +33,7 @@ metadata:
   name: spark-lb
 spec:
   type: LoadBalancer
-  loadBalancerIP: 127.0.0.1
+  loadBalancerIP: 34.133.18.222
   ports:
     - port:  8080
       protocol: TCP

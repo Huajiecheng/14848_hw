@@ -10,7 +10,7 @@ metadata:
   name: namenode
 spec:
   type: LoadBalancer
-  loadBalancerIP: 127.0.0.1
+  loadBalancerIP: 34.133.18.222
   ports:
     - name: "9870"
       port: 9870
